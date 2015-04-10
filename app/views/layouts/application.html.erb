@@ -198,7 +198,7 @@
 	</div>
 <!-- Library Javascript  -->
 <%= javascript_include_tag 'modernizr.custom' %>
-<%= javascript_include_tag 'mjquery-1.9.1' %>
+<%= javascript_include_tag 'jquery-1.9.1' %>
 <%= javascript_include_tag 'jquery-ui-1.10.3' %>
 
 <!-- Responsive Menu Javascript  -->
@@ -213,6 +213,9 @@
 	$(function() {
 		"use strict";
 		$("#arrival-date, #departure-date").datepicker({
+			// showOn: "button",
+			// buttonImage: "<%= asset_path('calendar.gif') %>",
+			// buttonImageOnly: true
 		});
 	});
 </script>
