@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:netmasters/Vegasish.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, '/srv/Vegasish'
+ set :deploy_to, '/srv/vegasish'
 
 # Default value for :scm is :git
 # set :scm, :git
