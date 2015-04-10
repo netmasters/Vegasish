@@ -12,7 +12,7 @@
   <% end %>
   <div class="form-group">
     <label class="label-control">Arrival Date</label>
-      <div class="booking-form select-black">
+      <div class="booking-form">
         <label class="collapse input">
           <%= f.date_field :arrival, :id => 'arrival-date', :class => 'input-control border-black' %>
         </label>
@@ -20,7 +20,7 @@
   </div>
   <div class="form-group">
     <label class="label-control">Departure Date</label>
-      <div class="booking-form select-black">
+      <div class="booking-form">
         <label class="collapse input">
           <%= f.date_field :departure, :id => 'departure-date', :class => 'input-control border-black' %>
         </label>
@@ -28,7 +28,7 @@
   </div>
   <div class="form-group select">
     <label class="label-control">Activity</label>
-      <div class="input-group select-black">
+      <div class="input-group">
         <label class="collapse">
           <%= f.select(:activity, ['Nightclub', 'Day Pool', 'Both']) %>
         </label>
@@ -37,7 +37,7 @@
 
   <div class="form-group select">
     <label class="label-control">Name</label>
-      <div class="input-group select-black">
+      <div class="input-group">
         <label class="collapse">
           <%= f.text_field :name %>
         </label>
@@ -46,7 +46,7 @@
 
   <div class="form-group select">
     <label class="label-control">Phone</label>
-      <div class="input-group select-black">
+      <div class="input-group">
         <label class="collapse">
           <%= f.text_field :phone %>
         </label>
@@ -54,7 +54,7 @@
   </div>
   <div class="form-group select">
     <label class="label-control">Email</label>
-      <div class="input-group select-black">
+      <div class="input-group">
         <label class="collapse">
           <%= f.text_field :email %>
         </label>

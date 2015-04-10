@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
   # GET /contacts.json
   def index
     @contacts = Contact.all
+    @properties = Property.all
   end
 
   # GET /contacts/1
@@ -15,6 +16,7 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   def new
     @contact = Contact.new
+    @properties = Property.all
   end
 
   # GET /contacts/1/edit

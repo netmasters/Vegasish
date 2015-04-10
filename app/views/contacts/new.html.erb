@@ -18,11 +18,29 @@
 									<div class="box-booking booking-inline">
 
 									<%= render 'form' %>
-
 									</div><!-- /.box-booking -->
 								</section><!-- /.md-booking -->
 							</div>
 						</section>
+					</div>
+				</section>
+
+				<section class="md-accomodation-content">
+					<div class="row clearfix">
+						<% @properties.each do |property| %>
+						<div class="grid_4">
+							<article class="media">
+								<figure>
+									<%= image_tag(property.thumb1_url, :class => 'media-object') %>
+								</figure>
+								<section class="media-body">
+									<h3 class="media-header h4"><%= property.name %></h3>
+									<p class="media-content"><%= property.description %> </p>
+									<!-- a class="btn btn-small btn-border btn-border-brown" href="room-detail.html">See Detail</a-->
+								</section>
+							</article>
+						</div>
+						<% end %>
 					</div>
 				</section>
 			</div>
