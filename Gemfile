@@ -46,5 +46,6 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.0', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
   gem 'capistrano3-puma', '~> 0.8', require: false
+  gem 'capistrano-passenger', '~> 0.0.1', require: false
 end
 
