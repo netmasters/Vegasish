@@ -30,7 +30,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to root, notice: 'Contact was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Your reservation details have been received. Someone will contact you shortly.' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }
@@ -44,7 +44,7 @@ class ContactsController < ApplicationController
   def update
     respond_to do |format|
       if @contact.update(contact_params)
-        format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
+        format.html { redirect_to @contact, notice: 'Your reservation details have been submitted.  Someone will contact you soon.' }
         format.json { render :show, status: :ok, location: @contact }
       else
         format.html { render :edit }
